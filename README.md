@@ -19,7 +19,7 @@ This docker container has installed the following tools
 
 # Usage
 
-## Run kubectl
+## Run Commands
 
 ```
 [ slamba ] ☘   docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops kubectl get pods
