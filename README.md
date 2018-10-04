@@ -22,28 +22,13 @@ This docker container has installed the following tools
 ## Run kubectl
 
 ```
-docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops kubectl get pods
+[slamba ◯  WHM0005395  12.Devops-Docker ] ☘   docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops kubectl get pods
+[slamba ◯  WHM0005395  12.Devops-Docker ] ☘   docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops kubeless function ls
+[slamba ◯  WHM0005395  12.Devops-Docker ] ☘   docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops kops get cluster
+[slamba ◯  WHM0005395  12.Devops-Docker ] ☘   docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops helm install stable/nginx
+[slamba ◯  WHM0005395  12.Devops-Docker ] ☘   docker run --rm -v $HOME/.aws:/root/.aws ubuntu:devops aws ec2 describe-instances
+[slamba ◯  WHM0005395  12.Devops-Docker ] ☘   docker run --rm -v $HOME/.aws:/root/.aws -v /etc/ansible:/etc/ansible ubuntu:devops ansible
 ```
-
-## Run kubeless
-
-`docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops kubeless function ls`
-
-## Run kops
-
-`docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops kops get cluster`
-
-## Install a helm package
-
-`docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops helm install stable/nginx`
-
-## Run aws cli
-
-`docker run --rm -v $HOME/.aws:/root/.aws ubuntu:devops aws ec2 describe-instances`
-
-## Run ansible
-
-`docker run --rm -v $HOME/.aws:/root/.aws -v /etc/ansible:/etc/ansible ubuntu:devops ansible`
 
 # Aliases
 
