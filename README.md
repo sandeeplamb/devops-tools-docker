@@ -21,7 +21,7 @@ This docker container has installed the following tools
 
 ## Run kubectl
 
-`docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops kubectl get pods`
+```docker run --rm -v $HOME/.kube:/root/.kube ubuntu:devops kubectl get pods```
 
 ## Run kubeless
 
